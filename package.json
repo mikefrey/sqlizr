@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "tap"
+    "test": "tape ./test | tap-spec"
   },
   "repository": {
     "type": "git",
@@ -25,5 +25,12 @@
   "bugs": {
     "url": "https://github.com/mikefrey/sqlizr/issues"
   },
-  "homepage": "https://github.com/mikefrey/sqlizr#readme"
+  "homepage": "https://github.com/mikefrey/sqlizr#readme",
+  "dependencies": {
+    "glob": "^5.0.5"
+  },
+  "devDependencies": {
+    "tap-spec": "^3.0.0",
+    "tape": "^4.0.0"
+  }
 }
