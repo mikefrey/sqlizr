@@ -1,0 +1,29 @@
+{
+  "name": "sqlizr",
+  "version": "1.0.0",
+  "description": "Automatically load Sequelize models via glob pattern",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "tap"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikefrey/sqlizr.git"
+  },
+  "keywords": [
+    "sequelize",
+    "models",
+    "postgres",
+    "mysql",
+    "sqlite"
+  ],
+  "author": "Mike Frey <frey.mike@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mikefrey/sqlizr/issues"
+  },
+  "homepage": "https://github.com/mikefrey/sqlizr#readme"
+}
