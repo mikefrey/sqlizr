@@ -41,3 +41,5 @@ db.User.find('mikefrey')
 
 If you define an `associate` function on your model definition, sqlizr will run that function
 after all models have been loaded, passing in a hash of all loaded models for easy reference.
+
+Setup any needed associations in the `associate` function, like shown in the example above.
