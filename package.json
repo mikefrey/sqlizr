@@ -1,6 +1,6 @@
 {
   "name": "sqlizr",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Automatically load Sequelize models via glob pattern",
   "main": "index.js",
   "directories": {
