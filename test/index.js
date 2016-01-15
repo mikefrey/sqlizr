@@ -8,13 +8,23 @@ test('sqlizr', function(t) {
     t.end()
   })
 
-  t.test('calls import on found files', function(t) {
+  t.test('calls import on found files, relative paths', function(t) {
     var m = process.cwd() + '/test/models/model-a.js'
     var s = { import: function(path) {
       t.equal(path, m, 'Path should be ' + m)
       return { name: 'a' }
     }}
     sqlizr(s, 'test/models/**/*-a.js')
+    t.end()
+  })
+
+  t.test('calls import on found files, absolute paths', function(t) {
+    var m = process.cwd() + '/test/models/model-a.js'
+    var s = { import: function(path) {
+      t.equal(path, m, 'Path should be ' + m)
+      return { name: 'a' }
+    }}
+    sqlizr(s, process.cwd() + '/test/models/**/*-a.js')
     t.end()
   })
 
