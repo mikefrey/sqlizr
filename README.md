@@ -1,4 +1,4 @@
-# sqlizr
+# sqlizr [![Travis CI](https://travis-ci.org/mikefrey/sqlizr.svg)](https://travis-ci.org/mikefrey/sqlizr)
 Automatically load Sequelize models via glob pattern.
 
 ## Installation
